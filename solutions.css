@@ -163,3 +163,65 @@
     left: calc(100% - 100px);
   }
 }
+
+
+/* es 13 */
+
+.ex-13-button{
+  position: relative;
+}
+
+.ex-13-top-white{
+  position: absolute;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  position:absolute;
+  animation-name: sposta-top;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+}
+
+
+.ex-13-button:hover .ex-13-bottom-white{
+  position: absolute;
+  animation-name: sposta-bottom;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+}
+
+@keyframes sposta-top{
+  0%{
+    left:20px;
+    top: -10px;
+  }
+  30%{
+    left: 100%;
+    top: -10px;
+  }
+  40%{
+    top: 60px;
+    left:calc(100% - 60px);
+  }
+  70%{
+    top: 60px;
+    left: -30px;
+  }
+  80%{
+    left: -30px;
+    top: 0px;
+  }
+  90%{
+    left: -30px;
+    top: -10px;
+  }
+  100%{
+    left:20px;
+    top: -10px;
+  }
+  
+}
+
+@keyframes sposta-bottom{
+
+}
