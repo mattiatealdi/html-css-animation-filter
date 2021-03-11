@@ -142,24 +142,24 @@
 
 @keyframes sposta-sopra{
   0%{
-    left:0;
+    left:20px;
   }
   50%{
     left: calc(100% - 60px);
   }
   100%{
-    left:0;
+    left:20px;
   }
 }
 
 @keyframes sposta-sotto{
   0%{
-    right:0;
+    left: calc(100% - 100px);
   }
   50%{
-    right: - calc(100% - 60px);
+    left:0;
   }
   100%{
-    right: 0;
+    left: calc(100% - 100px);
   }
 }
