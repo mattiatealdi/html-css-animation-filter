@@ -120,28 +120,46 @@
   }
 }
 
+
+/*  ex 12 (MALEDETTO)   */
 .ex-12-button{
   position:relative;
 }
 
 .ex-12-button:hover .ex-12-top-white{
-  animation-name: sposta;
+  animation-name: sposta-sopra;
   position:absolute;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: sposta-sotto;
+  position: absolute;
   animation-duration: 1s;
   animation-timing-function: linear;
 }
 
-@keyframes sposta{
+@keyframes sposta-sopra{
   0%{
-    top:0;
     left:0;
   }
   50%{
-    left: 100%;
-    top: 0%;
+    left: calc(100% - 60px);
   }
   100%{
-    top:0;
     left:0;
+  }
+}
+
+@keyframes sposta-sotto{
+  0%{
+    right:0;
+  }
+  50%{
+    right: - calc(100% - 60px);
+  }
+  100%{
+    right: 0;
   }
 }
