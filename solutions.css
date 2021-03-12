@@ -178,7 +178,7 @@
 .ex-13-button:hover .ex-13-top-white{
   position:absolute;
   animation-name: sposta-top;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function:linear;
 }
 
@@ -186,11 +186,11 @@
 .ex-13-button:hover .ex-13-bottom-white{
   position: absolute;
   animation-name: sposta-bottom;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-timing-function:linear;
 }
 
-/*
+
 @keyframes sposta-top{
   0%{
     left:20px;
@@ -223,7 +223,6 @@
   
 }
 
-*/
 
 
 @keyframes sposta-bottom{
@@ -237,17 +236,18 @@
   }
   40%{
     left:-30px;
-    top:-10px;
+    bottom: 50px;
   }
   70%{
-    top: -10px;
-    right: 0;
+    bottom: 50px;
+    left: 90%;
   }
   80%{
-
+    bottom: -10px;
+    left: 90%;
   }
   100%{
     bottom: -10px;
-    left: calc(100% - 100px);;
+    left: calc(100% - 100px);
   }
 }
